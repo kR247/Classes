@@ -52,14 +52,14 @@ class House:
         if isinstance(value, int):
             x = self.number_of_floors
             y = value
-            z = x + y
-            return z
+            return x + y
 
     def __radd__(self, value):
         y = self.number_of_floors
         x = value
-        z = x.__add__(y)
-        return z
+        return x.__add__(y)
+
+
 
 
 
