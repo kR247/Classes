@@ -36,6 +36,13 @@ class House:
     def __ne__(self, other):
         return self.number_of_floors != other.number_of_floors
 
+    def __add__(self, value):
+        self.number_of_floors += value
+        return self.number_of_floors
+
+
+
+
 
 h1 = House('Эльдорадо', 25)
 h2 = House('Эдем', 30)
@@ -49,3 +56,4 @@ print(h2)
 print(len(h1))
 print(len(h2))
 
+print(h1+10)
